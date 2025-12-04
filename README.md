@@ -1,2 +1,11 @@
 # AITable
-Summarize any CSV using ACC AI with predictions and stylized summaries
+
+Summarize any CSV file using ACC AI, including predictions and stylized summaries.
+
+## Usage
+
+```python
+from AITable import Analyze
+
+response = Analyze("my_data.csv")
+print(response)
