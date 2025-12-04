@@ -3,7 +3,7 @@ from gradio_client import Client
 
 MAX_ROWS = 50
 
-def Analyze(csv_path, max_rows=MAX_ROWS):
+def analyze_csv(csv_path, max_rows=MAX_ROWS):
     table = Table.read_table(csv_path)
     
     if table.num_rows > max_rows:
@@ -30,4 +30,5 @@ def Analyze(csv_path, max_rows=MAX_ROWS):
     )
     
     return result.replace(";", "\n    ")
+
 
