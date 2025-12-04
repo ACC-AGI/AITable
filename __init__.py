@@ -1,1 +1,1 @@
-from .core import Analyze
+from .core import analyze_csv
